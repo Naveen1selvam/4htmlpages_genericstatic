@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/c3.css' %}">
+</head>
+<body>
+    <h1>Menu</h1>
+    <ul>
+    <li><a href="{% url 'contact' %}">CONTACT</a><br></li>
+    <li><a href="{% url 'about' %}">ABOUT</a><br></li>
+    <li><a href="{% url 'home' %}">HOME</a><br></li>
+</ul><br>
+    <img src="{% static 'images/menu1.png' %}"><br><br>
+    <img src="{% static 'images/menu2.png' %}"><br>
+</body>
+</html>

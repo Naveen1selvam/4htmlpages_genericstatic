@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="{% static 'css/c2.css' %}">
+   <
+</head>
+<body>
+    <center>
+        <h1>Bow Bow Bliss- A Pet-Themed Restaurant And Cafe</h1>
+        
+    </center>
+    
+    <ul>
+        <li><a href="{% url 'contact' %}">CONTACT</a><br></li>
+    <li><a href="{% url 'news' %}">MENU</a><br></li>
+    <li><a href="{% url 'about' %}">ABOUT</a><br></li>
+    <li><a href="{% url 'home' %}">HOME</a><br></li>
+    </ul><br>
+
+
+    <div class="wrapper">
+        <div class="item">
+            <div class="polaroid"><img src="{% static 'images/bow.jpg' %}">
+              <div class="caption">Bow Bow</div>
+            </div>
+          </div>
+
+        <div class="item">
+          <div class="polaroid"><img src="{% static 'images/burger.jpg' %}">
+            <div class="caption">I Love Burger</div>
+          </div>
+        </div>
+      
+        <div class="item">
+          <div class="polaroid"><img src="{% static 'images/pastha.jpg' %}">
+            <div class="caption">Pasta</div>
+          </div>
+        </div>
+      
+        <div class="item">
+          <div class="polaroid"><img src="{% static 'images/poori.webp' %}">
+            <div class="caption">Poori</div>
+          </div>
+        </div>
+           
+        <div class="item">
+          <div class="polaroid"><img src="{% static 'images/briyani.jpg' %}">
+            <div class="caption">Biryani</div>
+          </div>
+        </div>
+      </div>
+</div>
+</body>
+</html>
